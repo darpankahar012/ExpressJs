@@ -17,8 +17,6 @@ hbs.registerPartials(partialsPath)
 
 app.use(express.static(publicDirectoryPath))
 app.get('', (req, res) => {
-    d
-
     res.render('index', {
         title: 'Weather',
         name: 'Andrew Mead'
