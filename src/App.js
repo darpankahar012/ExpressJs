@@ -16,7 +16,8 @@ hbs.registerPartials(partialsPath)
 
 
 app.use(express.static(publicDirectoryPath))
-app.get('', (req, res) => {d
+app.get('', (req, res) => {
+    d
 
     res.render('index', {
         title: 'Weather',
@@ -51,7 +52,7 @@ app.get('/weather', (req, res) => {
             error: "Error"
         })
     }
-
+    console.log("first")
     geoCode(req.query.address, (error, { latitude, longitude, location } = {}) => {
         if (error) {
             return res.send({ error })
