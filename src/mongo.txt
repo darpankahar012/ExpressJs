@@ -1,0 +1,6 @@
+how to connect mongoDB to node server
+
+1) Download mongoDB Community Server
+2) run mongod.exe and set dbpath
+    command like. ( /c/Users/Darpan/mongodb/bin/mongod.exe --dbpath=/c/Users/Darpan/mongodb-data )
+3) connect with local server (port:27017) using robo3T or mongodb-compass
