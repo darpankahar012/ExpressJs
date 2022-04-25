@@ -1,0 +1,27 @@
+run mongo locally
+/c/Users/Darpan/mongodb/bin/mongod.exe --dbpath=/c/Users/Darpan/mongodb-data
+
+
+(use gitbash)
+put project on heroku
+heroku --version
+heroku login
+ls -a -l ~/.ssh
+ssh-keygen -t rsa -b 4096 -C "darpankahar95@gmail.com"
+ls -a -l ~/.ssh
+eval
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+cat ~/.ssh/id_rsa.pub
+ssh -T git@github.com
+heroku keys:add
+heroku create weather-app8688(provide Unique Name)
+git remote
+git push heroku master
+
+
+
+
+
+compile(run) js and hbs file 
+node App.js -e js,hbs
